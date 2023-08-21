@@ -11,7 +11,6 @@ This is a simple Flask application that demonstrates CRUD (Create, Read, Update,
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 
-
 ## Prerequisites
 
 Before running this application, ensure you have the following installed:
@@ -30,7 +29,7 @@ Before running this application, ensure you have the following installed:
 2. Build and run the Docker containers:
 
    ```bash
-   docker-compose up 
+   docker-compose up
    ```
 
 3. Access the application by visiting http://localhost:5000 in your browser.
@@ -94,30 +93,33 @@ Deletes a user by ID.
 
 ![After Delete](/images/After_Delete.png)
 
-
 ## Troubleshooting
 
 - If you encounter issues with connectivity or data retrieval, refer to the Troubleshooting section in the `README.md` or documentation.
 - If you are facing any issues with building images , use this command :
- ```bash
-   docker build -t flask-mongo-crud:latest .
-   ```
+
+```bash
+  docker build -t flask-mongo-crud:latest .
+```
 
 - If you are facing difficulties in checking docker container database ,use the following command to get the container Id :
+
 ```bash
    docker ps
-   ```
+```
+
 - It will give you the container id ,then use the following command to access the container :
+
 ```bash
    docker exec -it < your mongo-container Id > /bin/bash
-   ``` 
+```
+
 - After that use "mongosh" command to access mongo db and you will get a mongo shell
- 
 
+Accessing the data in Collection
 
+![Accessing the collection](/images/Database_data.png)
 
 ## Contributing
 
 Contributions are welcome! If you find a bug or have suggestions for improvement, please feel free to submit a pull request.
-
-
