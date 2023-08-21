@@ -67,7 +67,7 @@ Retrieves a list of all users.
 
 ---
 
-### `GET /users/<id>`
+### `GET /user/<id>`
 
 Retrieves details of a user by ID.
 
@@ -75,7 +75,7 @@ Retrieves details of a user by ID.
 
 ---
 
-### `PUT /users/<id>`
+### `PUT /user/<id>`
 
 Updates a user's information.
 
@@ -87,7 +87,7 @@ After Update the new User Information.
 
 ---
 
-### `DELETE /users/<id>`
+### `DELETE /user/<id>`
 
 Deletes a user by ID.
 
