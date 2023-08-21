@@ -1,0 +1,43 @@
+# version: '3.3'
+
+# services:
+#  backend:
+#   container_name: PYTHON-FLASKAPI-BACKEND
+#   ports:
+#     - "5000:5000"
+#   command: flask run --host 0.0.0.0
+#   volumes:
+#     - .:/app
+#   links:
+#     - db
+#  db:
+#   image: mongo:latest
+#   container_name: MONGO-DB
+#   ports:
+#     - "27017:27017"
+#   volumes:
+#     - .:/app/data 
+version: '3.3'
+
+services:
+  backend:
+    container_name: python-flaskapi-backend
+    build:
+      context: .
+      dockerfile: Dockerfile  # Replace with your Dockerfile name if different
+    ports:
+      - "5000:5000"
+    command: flask run --host 0.0.0.0
+    volumes:
+      - .:/app
+
+  db:
+    image: mongo:latest
+    container_name: mongo-db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
