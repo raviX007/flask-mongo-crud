@@ -17,7 +17,6 @@ This is a simple Flask application that demonstrates CRUD (Create, Read, Update,
 Before running this application, ensure you have the following installed:
 
 - Docker: To containerize the Flask app and MongoDB.
-- MongoDB Compass (optional): To visually explore the MongoDB database.
 
 ## Installation
 
@@ -31,7 +30,7 @@ Before running this application, ensure you have the following installed:
 2. Build and run the Docker containers:
 
    ```bash
-   docker-compose up -d
+   docker-compose up 
    ```
 
 3. Access the application by visiting http://localhost:5000 in your browser.
@@ -39,7 +38,7 @@ Before running this application, ensure you have the following installed:
 ## Usage
 
 - To test the API, you can use tools like `curl`, Postman, or any other API client.
-- For database management and exploration, you can use MongoDB Compass to connect to the MongoDB instance running in the Docker container.
+- For database management and exploration, you can use the MongoDB instance running in the Docker container.
 
 ## Endpoints
 
